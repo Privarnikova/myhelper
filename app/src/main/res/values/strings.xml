@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Ваш помощник</string>
+    <string name="lek">Мои лекарства</string>
+    <string name="vod">Водный баланс</string>
+    <string name="cal">Календарь</string>
+    <string name="menu">Меню</string>
+    <string name="nas">Настройки</string>
+    <string name="nastext">Вы можете настроить приложение для вашего удобства</string>
+    <string name="yv">Уведомления</string>
+    <string name="yvtext">Настройте часы рассылки уведомлений</string>
+    <string name="prof">Профиль</string>
+    <string name="rost">pocт</string>
+    <string name="ves1">вес</string>
+    <string name="ves11">начальный</string>
+    <string name="ves2">желаемый</string>
+    <string name="cif">0</string>
+    <string name="calorii">ккал</string>
+    <string name="km">км</string>
+    <string name="vodaML">мл</string>
+    <string name="shag">шаг</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
+    <string-array name="numberPicker">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+    </string-array>
+    <string name="image1">image1</string>
+    <string name="image2">image2</string>
+</resources>

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegActivity">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:gravity="center"
+            android:text="Прежде чем мы приступим"
+            android:textColor="@color/text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="Заполните небольшую анкету, чтобы мы могли узнать вас получше"
+            android:textColor="@color/text"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:hint="Введите ваше имя"
+            android:inputType="text"
+            android:minHeight="48dp"
+            android:textColor="@color/text"
+            android:textColorHighlight="@color/text"
+            android:textColorHint="@color/text"
+            android:textColorLink="@color/text" />
+        <EditText
+            android:id="@+id/voz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:hint="Ваш возраст"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textColor="@color/text"
+            android:textColorHighlight="@color/text"
+            android:textColorHint="@color/text"
+            android:textColorLink="@color/text" />
+        <EditText
+            android:id="@+id/pas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:hint="Придумайте пароль"
+            android:inputType="numberPassword"
+            android:minHeight="48dp"
+            android:textColor="@color/text"
+            android:textColorHighlight="@color/text"
+            android:textColorHint="@color/text"
+            android:textColorLink="@color/text" />
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Ваш пол"
+                android:textColor="@color/text"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_m"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_weight="1"
+                    android:text="М"
+
+                    android:textColor="@color/text"
+                    android:textSize="18dp"
+                    android:theme="@style/MyRadioButton" />
+
+                <RadioButton
+                    android:id="@+id/radio_g"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_weight="1"
+                    android:text="Ж"
+
+                    android:textColor="@color/text"
+                    android:textSize="18dp"
+                    android:theme="@style/MyRadioButton" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/rost"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/rosttext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Ваш рост"
+                android:textColor="@color/text"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/rostch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="160"
+                android:textColor="@color/green"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/prodtext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="cm"
+                android:textColor="@color/green"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <NumberPicker
+            android:id="@+id/rostPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:width="100dp"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/ves"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vestext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Ваш вес"
+                android:textColor="@color/text"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vesch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="50"
+                android:textColor="@color/green"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/vestext1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="кг"
+                android:textColor="@color/green"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <NumberPicker
+            android:id="@+id/vesPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:width="100dp"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/gves"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="35dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/gvestext"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Ваш желаемый вес"
+                android:textColor="@color/text"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/gvesch"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="50"
+                android:textColor="@color/green"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/gvestext1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="кг"
+                android:textColor="@color/green"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <NumberPicker
+            android:id="@+id/gvesPicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:width="100dp"
+            android:descendantFocusability="blocksDescendants"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/dall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:contentDescription="@string/lek"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            app:srcCompat="@drawable/ic_dalee" />
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
